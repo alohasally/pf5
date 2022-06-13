@@ -1,0 +1,55 @@
+/* ㅅ사상ㄷ다단 */
+
+@media  (min-width: 768px){
+ 
+  header .navbar-default{
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    background-color:transparent;
+  }
+header .container {
+position: relative;
+padding-top: 30px;
+  }   
+  
+header .navbar-header {
+ float: none;
+ position: static;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+header .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
+  {
+    
+margin-top: auto;
+margin-bottom: auto;
+  }
+
+  .navbar-default .navbar-brand a{
+    font-size: 30px;
+    font-weight: bold;
+  }
+      #title .count{
+    
+  top: 50px !important;
+  }
+}
+
+
+@media  (min-width: 992px){
+.container{
+ width:750px;
+}
+
+}
+
+@media  (min-width: 1200px){
+.container{
+ width:1200px;
+}
+header .navbar-header {
+position: absolute;  
+}
+}

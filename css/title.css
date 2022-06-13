@@ -1,0 +1,139 @@
+#title .container{
+  
+ padding-left: 20px;
+ position: relative;
+}
+
+#title .tslide{
+  width: 97%;
+  margin:0 auto;
+}
+#title .tslist{
+
+/*   position: relative; */
+  padding-left: 300px;
+}
+
+#titl .tslist .tleft{
+
+/*   position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  left: calc((100% - 1200px) / 2; */
+}
+#title .wtleft{
+  position: absolute;
+  left: 0;
+  top:0;
+  height: 100%;
+}
+#title .wtleft .tleft{
+  position: absolute;
+  left: 60px;
+  top:0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#title .wtleft .tleft .h2{
+  
+  font-size: 50px;
+  width: 600px;
+  position: absolute;
+  top: 130px;
+}
+
+#title .wtleft .tleft .p{
+  
+  width: 200px;
+  margin-top: 180px;
+}
+
+#title .wtleft .tleft a{
+  
+  color: #333;
+  border: 1px solid #333;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 28px;
+}
+
+
+#title .count{
+  
+  position: absolute;
+  width: 100px;
+  top: 100px;
+  left: 60px;
+  font-weight: 777;
+} 
+#title .count .ccount{
+  
+} 
+#title .count .tcount{
+  
+  position: absolute;
+  left: 150px;
+} 
+#title .count .dash{
+  
+  font-size: 0;
+  width: 120px;
+  border: 0.5px solid #999;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+} 
+#title .count .dash::before{
+  display: block;
+  content:"";
+  width: 0px;
+  border: 0.5px solid #999;
+  animation-name: dash;
+  animation-duration: 3.4s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+@keyframes dash{
+  0%{
+  width: 10px;
+  border: 0.5px solid #000;
+  }
+  100%{
+  width: 120px;
+  border: 0.5px solid #000; 
+  }
+}
+  
+.tleftShow{
+/*   opacity: 1 !important;
+  left:60px !important;
+  z-index: 1; */
+  animation-name: tleftShow;
+  animation-duration: 4500ms;
+   
+    
+}
+
+@keyframes tleftShow{
+  0%{
+    opacity:0.6;
+    left:60px;
+    
+  }
+
+  100%{
+    opacity: 1;
+    left:60px;
+    
+  } 
+}
