@@ -3,17 +3,17 @@ button.slick-arrow{
 width: 50px;
 height: 120px;
 z-index: 1;
-/* background-color: rgba(255,255,255,0.7); */
+background-color: rgba(255,255,255,0.7);
 border-radius: 0 10px 10px 0;
 border-radius: 10px 0 0 10px;
 transition: all 0.5s;
 }
 button.slick-arrow.slick-prev{
-left: -30px;
+left: 0;
 border-radius: 0 10px 10px 0;
 }
 button.slick-arrow.slick-next{
-right: -30px;
+right: 0;
 }
 button.slick-arrow::before{
 font-family: initial !important;
@@ -43,5 +43,5 @@ transform: translateX(3px) rotate(45deg);
 }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
   
-  background-color: transparent;
+  background-color: #fff;
 }
